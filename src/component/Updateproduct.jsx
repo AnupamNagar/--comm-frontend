@@ -14,7 +14,7 @@ const Updateproduct = () => {
     }, []);
 
     const getsingleproduct = async()=>{
-        let result  = await fetch(`http://localhost:5000/singleproduct/${params.id}`);
+        let result  = await fetch(`https://e-comm-backend-one.vercel.app/singleproduct/${params.id}`);
         result =  await result.json();
         // console.warn(result);
         setName(result.name);
@@ -43,7 +43,7 @@ const Updateproduct = () => {
             alert("Invalid company");
             return false;
         }
-         let result = await fetch(`http://localhost:5000/update/${params.id}` , {
+         let result = await fetch(`https://e-comm-backend-one.vercel.app/update/${params.id}` , {
             method: "put",
             body: JSON.stringify({name , price, category, company}),
             headers:{

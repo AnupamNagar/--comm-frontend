@@ -25,7 +25,7 @@ const Login = () => {
             alert("Invalid Password");
             return false;
         }
-        let result  = await fetch("http://localhost:5000/login", {
+        let result  = await fetch("https://e-comm-backend-one.vercel.app/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

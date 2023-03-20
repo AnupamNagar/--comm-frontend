@@ -30,7 +30,7 @@ const Signup = () => {
         }
 
         // Api call
-        let result  = await fetch('http://localhost:5000/signup',{
+        let result  = await fetch('https://e-comm-backend-one.vercel.app/signup',{
             method:"POST", 
             headers:{  
                 "Content-Type":"application/json"  // this is important to send data in json format  , otherwise it will give error  , 500 internal server error  , 404 not found error etc 

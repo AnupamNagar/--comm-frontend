@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { AiFillDelete } from 'react-icons/ai';
+// import { AiFillDelete } from 'react-icons/ai';
 import { RxUpdate } from 'react-icons/rx';
 import { Link } from 'react-router-dom';
 
@@ -11,14 +11,14 @@ const Productlist = () => {
     }, []);
 
     const getproducts = async () => {
-        let result = await fetch('http://localhost:5000/products');
+        let result = await fetch('https://e-comm-backend-one.vercel.app/products');
         result = await result.json();
         setproducts(result);
     }
 
     const deleteproduct = async (id) => {
         // console.warn(id);
-        let result = await fetch(`http://localhost:5000/delete/${id}`, {
+        let result = await fetch(`https://e-comm-backend-one.vercel.app/delete/${id}`, {
             method: 'delete'
         })
         result = await result.json();
@@ -31,7 +31,7 @@ const Productlist = () => {
         // console.warn(e.target.value);
         let key = e.target.value;
         if (key) {
-            let result = await fetch(`http://localhost:5000/search/${key}`);
+            let result = await fetch(`https://e-comm-backend-one.vercel.app/search/${key}`);
             result = await result.json();
             setproducts(result);
         } else {
@@ -97,7 +97,7 @@ const Productlist = () => {
                                         </td>
                                         <td className="px-6 py-4">
                                             <button onClick={() => deleteproduct(item._id)} >
-                                                <AiFillDelete size={20} className=" cursor-pointer hover:scale-110" />
+                                                <h1 className=" cursor-pointer hover:scale-110">D</h1>
                                             </button>
                                         </td>
                                         <td className="px-6 py-4">
