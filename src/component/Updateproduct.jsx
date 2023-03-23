@@ -86,7 +86,7 @@ const Updateproduct = () => {
                             </div>
 
 
-                            <button onClick={updateproduct}  type="submit" className="w-full text-white bg-sky-400 hover:bg-sky-500 focus:ring-4 focus:outline-none focus:ring-indigo-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-sky-400 dark:hover:bg-sky-500 dark:focus:ring-sky-600">Update Product</button>
+                            <button onClick={updateproduct}  className="w-full text-white bg-sky-400 hover:bg-sky-500 focus:ring-4 focus:outline-none focus:ring-indigo-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-sky-400 dark:hover:bg-sky-500 dark:focus:ring-sky-600">Update Product</button>
                             
                         </form>
                     </div>

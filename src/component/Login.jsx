@@ -69,7 +69,7 @@ const Login = () => {
                             </div>
 
 
-                            <button onClick={handlelogin}  type="submit" className="w-full text-white bg-sky-400 hover:bg-sky-500 focus:ring-4 focus:outline-none focus:ring-indigo-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-sky-400 dark:hover:bg-sky-500 dark:focus:ring-sky-600">Login</button>
+                            <button onClick={handlelogin}   className="w-full text-white bg-sky-400 hover:bg-sky-500 focus:ring-4 focus:outline-none focus:ring-indigo-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-sky-400 dark:hover:bg-sky-500 dark:focus:ring-sky-600">Login</button>
                             <p className="text-sm font-light text-gray-500 dark:text-gray-400">
                                 Don't have an account? <Link to="/signup" className="font-medium text-indigo-600 hover:underline dark:text-indigo-500">Signup </Link>
                             </p>
